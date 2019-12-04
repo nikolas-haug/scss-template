@@ -1,0 +1,24 @@
+{
+  "name": "scss-template",
+  "version": "1.0.0",
+  "description": "a boilerplate for small or large front end projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:basic": "node-sass ./basic/sass/main.scss ./basic/css/style.css --output-compressed -w",
+    "compile:advanced": "node-sass ./advanced/sass/main.scss ./advanced/css/style.css --output-compressed -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolas-haug/scss-template.git"
+  },
+  "author": "Niko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolas-haug/scss-template/issues"
+  },
+  "homepage": "https://github.com/nikolas-haug/scss-template#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
