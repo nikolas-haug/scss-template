@@ -1,0 +1,22 @@
+/**
+*
+* Reset the box-sizing to border box
+*
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defaults what 1 rem is
+    font-size: $default-rem-size;
+}
+
+body {
+    box-sizing: border-box;
+}

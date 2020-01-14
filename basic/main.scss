@@ -1,4 +1,33 @@
-@import "sass/base";
+/*!
+*
+* 
+* A lightweight front-end design framework/classkit for responsive design
+* and browser-consistent web apps
+*
+* Adapted from Tania Rascia's Primitive UI: https://github.com/taniarascia/primitive
+*
+*/
+
+//====================================================
+// CONFIG
+//====================================================
+
+@import "sass/mixins";
+@import "sass/variables";
+
+
+//====================================================
+// RESET
+//====================================================
+
+@import "sass/normalize";
+@import "sass/reset";
+
+
+//====================================================
+// COMPONENTS
+//====================================================
+
 @import "sass/components";
 @import "sass/layout";
-@import "sass/normalize";
+@import "sass/utilities";
