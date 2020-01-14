@@ -4,6 +4,10 @@
 *
 */
 
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::after,
 *::before {
@@ -12,11 +16,7 @@
     box-sizing: inherit;
 }
 
-html {
-    // This defaults what 1 rem is
-    font-size: $default-rem-size;
-}
-
-body {
-    box-sizing: border-box;
+// Remove figure margin
+figure {
+    margin: 0;
 }
