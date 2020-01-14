@@ -24,24 +24,68 @@
 
 @include x-small-breakpoint {
     .container {
-        max-width: calc(#{$x-small} * .95); 
+        // max-width: calc(#{$x-small} * .95); 
+        @include container-size($x-small, $container-gutter);
     }
 }
 
 @include small-breakpoint {
     .container {
-        max-width: calc(#{$small} * .95);
+        // max-width: calc(#{$small} * .95);
+        @include container-size($small, $container-gutter);
     }
 }
 
 @include medium-breakpoint {
     .container {
-        max-width: calc(#{$medium} * .95);
+        // max-width: calc(#{$medium} * .95);
+        @include container-size($medium, $container-gutter);
     }
 }
 
 @include large-breakpoint {
     .container {
-        max-width: calc(#{$large} * .95);
+        // max-width: calc(#{$large} * .95);
+        @include container-size($large, $container-gutter);
     }
+}
+
+// ROWS
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+// ALL COLUMNS
+
+// only x-small here
+[class^="col-xs"] {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.col-xs {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.col-xs-1 {
+    flex-basis: 33.3333333%;
+    max-width: 33.3333333%;
+}
+
+.col-xs-2 {
+    flex-basis: 66.6666666%;
+    max-width: 66.6666666%;
+}
+
+.col-xs-3 {
+    flex-basis: 100%;
+    max-width: 100%;
 }

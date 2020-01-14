@@ -27,3 +27,7 @@
         @content;
     }
 }
+
+@mixin container-size($size, $gutter) {
+    max-width: calc(#{$size} * #{$gutter}); 
+}
