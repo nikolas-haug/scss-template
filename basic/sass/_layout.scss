@@ -1,0 +1,47 @@
+/**
+*
+* LAYOUT
+*
+*/
+
+// CONTAINERS
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-full {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@include x-small-breakpoint {
+    .container {
+        max-width: calc(#{$x-small} * .95); 
+    }
+}
+
+@include small-breakpoint {
+    .container {
+        max-width: calc(#{$small} * .95);
+    }
+}
+
+@include medium-breakpoint {
+    .container {
+        max-width: calc(#{$medium} * .95);
+    }
+}
+
+@include large-breakpoint {
+    .container {
+        max-width: calc(#{$large} * .95);
+    }
+}

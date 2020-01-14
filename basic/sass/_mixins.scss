@@ -4,20 +4,26 @@
 *
 */
 
+@mixin x-small-breakpoint {
+    @media (min-width: #{$x-small}) {
+        @content;
+    }
+}
+
 @mixin small-breakpoint {
-    @media(min-width: #{$mobile}) {
+    @media (min-width: #{$small}) {
         @content;
     }
 }
 
 @mixin medium-breakpoint {
-    @media (min-width: #{$tablet}) {
+    @media (min-width: #{$medium}) {
         @content;
     }
 }
 
 @mixin large-breakpoint {
-    @media (min-width: #{$desktop}) {
+    @media (min-width: #{$large}) {
         @content;
     }
 }
