@@ -27,28 +27,24 @@
 
 @include x-small-breakpoint {
     .container {
-        // max-width: calc(#{$x-small} * .95); 
         @include container-size($x-small, $container-gutter);
     }
 }
 
 @include small-breakpoint {
     .container {
-        // max-width: calc(#{$small} * .95);
         @include container-size($small, $container-gutter);
     }
 }
 
 @include medium-breakpoint {
     .container {
-        // max-width: calc(#{$medium} * .95);
         @include container-size($medium, $container-gutter);
     }
 }
 
 @include large-breakpoint {
     .container {
-        // max-width: calc(#{$large} * .95);
         @include container-size($large, $container-gutter);
     }
 }
@@ -88,6 +84,9 @@
         flex-basis: percentage($i / $grid-columns);
         max-width: percentage($i / $grid-columns);
     }
+    .col-xs-offset-#{$i} {
+        margin-left: percentage($i / $grid-columns);
+    }
 }
 
 // Between x-small and small breakpoints
@@ -112,6 +111,9 @@
         .col-sm-#{$i} {
             flex-basis: percentage($i / $grid-columns);
             max-width: percentage($i / $grid-columns);
+        }
+        .col-sm-offset-#{$i} {
+            margin-left: percentage($i / $grid-columns);
         }
     }
 
@@ -140,6 +142,9 @@
             flex-basis: percentage($i / $grid-columns);
             max-width: percentage($i / $grid-columns);
         }
+        .col-med-offset-#{$i} {
+            margin-left: percentage($i / $grid-columns);
+        }
     }
 
 }
@@ -166,6 +171,9 @@
         .col-lg-#{$i} {
             flex-basis: percentage($i / $grid-columns);
             max-width: percentage($i / $grid-columns);
+        }
+        .col-lg-offset-#{$i} { 
+            margin-left: percentage($i / $grid-columns);
         }
     }
 
