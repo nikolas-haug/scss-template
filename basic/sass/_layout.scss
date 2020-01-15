@@ -6,7 +6,10 @@
 
 // CONTAINERS
 
-.container {
+.container,
+.container-sm,
+.container-med,
+.container-lg {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -61,9 +64,14 @@
     margin-left: -0.5rem;
 }
 
+.remove-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 // ALL COLUMNS
 
-// only x-small here
+// Mobile first - x-small screens
 [class^="col-xs"] {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -71,7 +79,7 @@
 
 .col-xs {
     flex-grow: 1;
-    flex-basis: 0;
+    flex-basis: auto;
     max-width: 100%;
 }
 
@@ -80,4 +88,85 @@
         flex-basis: percentage($i / $grid-columns);
         max-width: percentage($i / $grid-columns);
     }
+}
+
+// Between x-small and small breakpoints
+@include x-small-breakpoint {
+
+    [class^="col-sm"] {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .container-sm {
+        @include container-size($x-small, $container-gutter);
+    }
+    
+    .col-sm {
+        flex-grow: 1;
+        flex-basis: auto;
+        max-width: 100%;
+    }
+    
+    @for $i from 1 through $grid-columns {
+        .col-sm-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+
+}
+
+// Between small and medium breakpoints
+@include small-breakpoint {
+
+    [class^="col-med"] {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .container-med {
+        @include container-size($small, $container-gutter);
+    }
+    
+    .col-med {
+        flex-grow: 1;
+        flex-basis: auto;
+        max-width: 100%;
+    }
+    
+    @for $i from 1 through $grid-columns {
+        .col-med-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+
+}
+
+// Between medium and large breakpoints
+@include medium-breakpoint {
+
+    [class^="col-lg"] {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .container-lg {
+        @include container-size($medium, $container-gutter);
+    }
+    
+    .col-lg {
+        flex-grow: 1;
+        flex-basis: auto;
+        max-width: 100%;
+    }
+    
+    @for $i from 1 through $grid-columns {
+        .col-lg-#{$i} {
+            flex-basis: percentage($i / $grid-columns);
+            max-width: percentage($i / $grid-columns);
+        }
+    }
+
 }

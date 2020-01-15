@@ -9,25 +9,19 @@
 //=====================================================
 
 $x-small: 480px;
-$small: 768px;
+$small: 750px;
 $medium: 992px;
 $large: 1200px;
 
+// Sets the width of the containers
 $container-gutter: 0.95;
 
 //=====================================================
 // GRID
 //=====================================================
 
+// Controls the number of columns for the layout
 $grid-columns: 12;
-
-//=====================================================
-// BREAKPOINTS
-//=====================================================
-
-// $mobile: $x-small;
-// $tablet: $small;
-// $desktop: $medium;
 
 //=====================================================
 // TYPOGRAPHY
