@@ -60,18 +60,17 @@
     margin-left: -0.5rem;
 }
 
+[class^="col-"] {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
 .remove-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0;
 }
 
-// ALL COLUMNS
-
-// Mobile first - x-small screens
-[class^="col-xs"] {
-    padding-right: .5rem;
-    padding-left: .5rem;
-}
+// Mobile first - < x-small container size
 
 .col-xs {
     flex-grow: 1;
@@ -91,11 +90,6 @@
 
 // Between x-small and small breakpoints
 @include x-small-breakpoint {
-
-    [class^="col-sm"] {
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
 
     .container-sm {
         @include container-size($x-small, $container-gutter);
@@ -122,11 +116,6 @@
 // Between small and medium breakpoints
 @include small-breakpoint {
 
-    [class^="col-med"] {
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
-
     .container-med {
         @include container-size($small, $container-gutter);
     }
@@ -151,11 +140,6 @@
 
 // Between medium and large breakpoints
 @include medium-breakpoint {
-
-    [class^="col-lg"] {
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
 
     .container-lg {
         @include container-size($medium, $container-gutter);

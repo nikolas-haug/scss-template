@@ -15,17 +15,17 @@
 // CONFIG
 //====================================================
 
-@import "sass/mixins";
 @import "sass/variables";
+@import "sass/mixins";
 
 
 //====================================================
 // RESET
 //====================================================
 
-@import "sass/base";
 @import "sass/normalize";
 @import "sass/reset";
+@import "sass/base";
 
 
 //====================================================

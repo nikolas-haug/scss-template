@@ -31,3 +31,44 @@ $grid-columns: 12;
 $base-font-size: 62.5%;
 $base-line-height: 1.5;
 
+// Global
+$font-family-primary: 'Roboto', 'Arial', sans-serif;
+$font-color-primary: #303030;
+$font-size-primary: 1.6rem;
+
+// Headings
+$heading-font-family-primary: 'Roboto', 'Arial', sans-serif;
+$heading-font-color-primary: #303030;
+$heading-font-weight: 700;
+$heading-line-height: 1.2;
+
+// Small headings
+$h1-small: 2.8rem;
+$h2-small: 2.6rem;
+$h3-small: 2.2rem;
+$h4-small: 1.8rem;
+$h5-small: 1.4rem;
+
+// Primary headings
+$h1-primary: 3.6rem;
+$h2-primary: 3.2rem;
+$h3-primary: 2.8rem;
+$h4-primary: 2.4rem;
+$h5-primary: 2rem;
+
+// Block element spacing
+$typography-margins: 1.2rem;
+
+//=====================================================
+// COLOR
+//=====================================================
+
+// Global
+$global-background-color: #fff;
+
+$color-primary: tomato;
+$color-secondary: lightblue;
+$color-tertiary: orange;
+
+$color-link: green;
+$color-link-hover: lighten($color-link, 10%);
