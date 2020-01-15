@@ -78,11 +78,13 @@
     max-width: 100%;
 }
 
-@for $i from 1 through $grid-columns {
+@for $i from 1 through $grid-columns { 
+    .col-#{$i},
     .col-xs-#{$i} {
         flex-basis: percentage($i / $grid-columns);
         max-width: percentage($i / $grid-columns);
     }
+    .col-offset-#{$i},
     .col-xs-offset-#{$i} {
         margin-left: percentage($i / $grid-columns);
     }
