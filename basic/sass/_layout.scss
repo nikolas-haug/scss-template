@@ -75,17 +75,9 @@
     max-width: 100%;
 }
 
-.col-xs-1 {
-    flex-basis: 33.3333333%;
-    max-width: 33.3333333%;
-}
-
-.col-xs-2 {
-    flex-basis: 66.6666666%;
-    max-width: 66.6666666%;
-}
-
-.col-xs-3 {
-    flex-basis: 100%;
-    max-width: 100%;
+@for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+        flex-basis: percentage($i / $grid-columns);
+        max-width: percentage($i / $grid-columns);
+    }
 }
