@@ -47,6 +47,22 @@
 }
 
 // Margins
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
 .margin-top-zero {
     margin-top: 0;
 }
@@ -84,6 +100,22 @@
 }
 
 // Paddings
+.padding-top-auto {
+    padding-top: auto;
+}
+
+.padding-bottom-auto {
+    padding-bottom: auto;
+}
+
+.padding-left-auto {
+    padding-left: auto;
+}
+
+.padding-right-auto {
+    padding-right: auto;
+}
+
 .padding-top-zero {
     padding-top: 0;
 }
@@ -141,4 +173,17 @@
 .img-100 {
     width: 100%;
     height: auto;
+}
+
+// Justify and align content
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
 }

@@ -22,6 +22,7 @@ $container-gutter: 0.95;
 
 // Controls the number of columns for the layout
 $grid-columns: 12;
+$grid-column-padding: 1.5rem;
 
 //=====================================================
 // TYPOGRAPHY
@@ -33,12 +34,12 @@ $base-line-height: 1.5;
 
 // Global
 $font-family-primary: 'Roboto', 'Arial', sans-serif;
-$font-color-primary: #303030;
+$font-color-primary: #fff;
 $font-size-primary: 1.6rem;
 
 // Headings
 $heading-font-family-primary: 'Roboto', 'Arial', sans-serif;
-$heading-font-color-primary: #303030;
+$heading-font-color-primary: #f4f3f3;
 $heading-font-weight: 700;
 $heading-line-height: 1.2;
 
@@ -64,8 +65,8 @@ $typography-margins: 1.2rem;
 //=====================================================
 
 // Global
-$global-background-color: #fff;
-
+$global-background-color: #333;
+ 
 $color-primary: tomato;
 $color-secondary: lightblue;
 $color-tertiary: orange;
