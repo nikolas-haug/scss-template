@@ -439,7 +439,7 @@ a {
 
 @media (max-width: 500px) {
   body {
-    margin-top: 50px; }
+    margin-top: 65px; }
   .main-navigation {
     position: fixed;
     top: 0;
@@ -447,13 +447,16 @@ a {
   .main-navigation ul {
     opacity: 0;
     max-height: 0;
-    overflow: hidden; }
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s; }
   .menu-toggle {
-    display: block; }
+    display: block;
+    padding: 1em;
+    background: blue; }
   .main-navigation.toggled ul {
     opacity: 1;
     max-height: 100%;
-    flex-direction: column;
     background: blue; } }
 
 /**

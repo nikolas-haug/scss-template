@@ -41,7 +41,8 @@
 
 @media (max-width: 500px) {
     body {
-        margin-top: 50px;
+        // Need to adjust this according to collapsed menu size/padding
+        margin-top: 65px;
     }
     .main-navigation {
         position: fixed;
@@ -51,15 +52,18 @@
     .main-navigation ul {
         opacity: 0;
         max-height: 0;
+        flex-direction: column;
         overflow: hidden;
+        transition: all 0.3s;
     }
     .menu-toggle {
         display: block;
+        padding: 1em;
+        background: blue;
     }
     .main-navigation.toggled ul {
         opacity: 1;
         max-height: 100%;
-        flex-direction: column;
-        background: blue;
+        background: blue; 
     }
 }
