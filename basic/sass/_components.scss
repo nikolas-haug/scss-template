@@ -3,3 +3,63 @@
 * COMPONENTS
 *
 */
+
+//===================================================
+// Main nav (built for wordpress dynamic menus)
+//===================================================
+.main-navigation {
+    width: 100%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        // Controls the placement of the menu links
+        margin: 0 0 0 0;
+        justify-content: center;
+    }
+}
+
+.main-navigation ul li a {
+    display: inline-block;
+    padding: $navbar-padding;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        background: blue;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 50px;
+    }
+    .main-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .main-navigation ul {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .main-navigation.toggled ul {
+        opacity: 1;
+        max-height: 100%;
+        flex-direction: column;
+        background: blue;
+    }
+}
