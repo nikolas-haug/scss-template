@@ -35,10 +35,14 @@
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
+
+			document.querySelector('.menu-toggle').classList.remove('active');
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
+
+			document.querySelector('.menu-toggle').classList.add('active');
 		}
 	};
 
