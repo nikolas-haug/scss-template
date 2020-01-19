@@ -6,6 +6,16 @@
 
 //===================================================
 // Main nav (built for wordpress dynamic menus)
+//
+// Use this in the template file: 
+//
+//              <nav id="site-navigation" class="main-navigation">
+//                  <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+//                      <span class="hamburger"></span>
+//                  </button>
+//              <!-- Wordpress dynamic nav goes here --> 
+//              </nav>
+//
 //===================================================
 .main-navigation {
     width: 100%;
