@@ -35,6 +35,7 @@ $base-line-height: 1.5;
 // Global
 $font-family-primary: "Roboto", "Arial", sans-serif;
 $font-color-primary: #fff;
+$font-color-secondary: #333;
 $font-size-primary: 1.6rem;
 
 // Headings
@@ -114,7 +115,16 @@ $mobile-navbar-background-color: #333;
 // FORMS
 //=====================================================
 
-$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$buttons: (".button, a.button, button, [type=submit], [type=reset], [type=button]");
+
+$forms: (
+  "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
+);
+$input-background: #f2f2f2;
+$placeholder: darken($accent-color, 20%);
+$form-border: 1px solid $border-color;
+$form-border-hover: 1px solid darken($border-color, 10%);
+$form-border-focus: 1px solid $color-link;
 
 //======================================================
 // Buttons
