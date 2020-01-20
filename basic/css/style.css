@@ -491,7 +491,12 @@ a {
     width: 100%;
     padding: 2.5rem;
     background: #333;
-    border: none; }
+    border: none;
+    margin-bottom: 0; }
+    .menu-toggle:focus, .menu-toggle:active, .menu-toggle:hover {
+      background: #333;
+      border: none;
+      margin-bottom: 0; }
   .main-navigation.toggled ul {
     opacity: 1;
     max-height: 100%;
@@ -507,6 +512,80 @@ blockquote {
     display: block;
     margin-top: 1.2rem;
     font-size: 1rem; }
+
+.button, a.button, button, [type=submit], [type=reset], [type=button] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid tomato;
+  border-radius: 4px;
+  background: tomato;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.5rem;
+  text-transform: none;
+  padding: 1rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1; }
+
+.button:hover, a.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
+  border: 1px solid #ff3814;
+  background: #ff3814;
+  color: #ffffff;
+  text-decoration: none; }
+
+.button:focus, .button:active, a.button:focus, a.button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
+  border: 1px solid #ff3814;
+  background: #ff3814;
+  color: #ffffff;
+  text-decoration: none; }
+
+.button::-moz-focus-inner, a.button::-moz-focus-inner, button::-moz-focus-inner, [type=submit]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=button]::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.accent-button,
+a.accent-button {
+  color: #ffffff;
+  border: 1px solid lightblue;
+  background: lightblue; }
+  .accent-button:hover, .accent-button:focus, .accent-button:active,
+  a.accent-button:hover,
+  a.accent-button:focus,
+  a.accent-button:active {
+    color: #d4ebf2;
+    border: 1px solid #86c5da;
+    background: #86c5da; }
+
+.muted-button,
+a.muted-button {
+  background: transparent;
+  border: 1px solid grey;
+  color: #010101; }
+  .muted-button:hover, .muted-button:focus, .muted-button:active,
+  a.muted-button:hover,
+  a.muted-button:focus,
+  a.muted-button:active {
+    color: #010101;
+    border: 1px solid #343434;
+    background: transparent; }
+
+.round-button,
+a.round-button {
+  border-radius: 40px; }
+
+.square-button,
+a.square-button {
+  border-radius: 0; }
+
+.full-button,
+a.full-button {
+  display: block;
+  width: 100%; }
 
 /**
 *

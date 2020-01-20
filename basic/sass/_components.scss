@@ -115,8 +115,16 @@
     justify-content: center;
     width: 100%;
     padding: $mobile-navbar-padding;
-    background: #333;
+    background: $mobile-navbar-background-color;
     border: none;
+    margin-bottom: 0;
+    &:focus,
+    &:active,
+    &:hover {
+        background: $mobile-navbar-background-color;
+        border: none;
+        margin-bottom: 0;
+    }
   }
   .main-navigation.toggled ul {
     opacity: 1;
@@ -146,4 +154,117 @@ blockquote {
     margin-top: $typography-margins;
     font-size: 1rem;
   }
+}
+
+//===================================================
+// Buttons
+//
+// Use for:
+//
+// <button>, <a class="button>, <input type="submit">, <input type="button">, <input type="reset">
+//
+//===================================================
+%buttons {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: $button-border-width $button-border-style $button-border-color;
+  border-radius: $button-border-radius;
+  background: $button-background-color;
+  color: $button-color;
+  font-weight: $button-font-weight;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  text-transform: $button-text-transform;
+  padding: 1rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+// Buttons on hover
+%buttons-hover {
+  border: $button-border-width $button-border-style darken($button-border-color, 10%);
+  background: $button-background-hover;
+  color: $button-color;
+  text-decoration: none;
+}
+
+// Buttons on focus
+%buttons-focus {
+  border: $button-border-width $button-border-style darken($button-border-color, 10%);
+  background: darken($button-background-color, 10%);
+  color: $button-color;
+  text-decoration: none;
+}
+
+// Add styles to .button class, button element, and button-based inputs
+#{$buttons} {
+    @extend %buttons;
+  
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+  
+    &:hover {
+      @extend %buttons-hover;
+    }
+  
+    &:focus,
+    &:active {
+      @extend %buttons-focus;
+    }
+  }
+  
+// Secondary button color
+.accent-button,
+a.accent-button {
+  color: $accent-button-color;
+  border: 1px solid $accent-button-background-color;
+  background: $accent-button-background-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-button-color-hover;
+    border: 1px solid darken($accent-button-background-color, 10%);
+    background: darken($accent-button-background-color, 10%);
+  }
+}
+
+// Muted buttons
+.muted-button,
+a.muted-button {
+  background: $muted-background;
+  border: $muted-border;
+  color: $muted-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $muted-color-hover;
+    border: $muted-border-hover;
+    background: $muted-background-hover;
+  }
+}
+
+// Round buttons
+.round-button,
+a.round-button {
+  border-radius: $round-buttons;
+}
+
+// Square buttons
+.square-button,
+a.square-button {
+  border-radius: 0;
+}
+
+// Full width buttons (block level)
+.full-button,
+a.full-button {
+  display: block;
+  width: 100%;
 }

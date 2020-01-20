@@ -33,12 +33,12 @@ $base-font-size: 62.5%;
 $base-line-height: 1.5;
 
 // Global
-$font-family-primary: 'Roboto', 'Arial', sans-serif;
+$font-family-primary: "Roboto", "Arial", sans-serif;
 $font-color-primary: #fff;
 $font-size-primary: 1.6rem;
 
 // Headings
-$heading-font-family-primary: 'Roboto', 'Arial', sans-serif;
+$heading-font-family-primary: "Roboto", "Arial", sans-serif;
 $heading-font-color-primary: #f4f3f3;
 $heading-font-weight: 700;
 $heading-line-height: 1.2;
@@ -71,13 +71,16 @@ $blockquote-background-color: transparent;
 
 // Global
 $global-background-color: #333;
- 
+
 $color-primary: tomato;
 $color-secondary: lightblue;
 $color-tertiary: orange;
 
 $color-link: green;
 $color-link-hover: lighten($color-link, 10%);
+
+// Buttons
+$accent-color: grey;
 
 //=====================================================
 // SPACING
@@ -87,6 +90,16 @@ $margin-utility: 1rem;
 $padding-utility: 1rem;
 
 //=====================================================
+// Borders
+//=====================================================
+
+$border-width: 1px;
+$border-style: solid;
+$border-color: #dedede;
+$border-radius: 4px;
+$borders: $border-width $border-style $border-color;
+
+//=====================================================
 // NAVIGATION
 //=====================================================
 
@@ -94,3 +107,43 @@ $navbar-padding: 1rem;
 $mobile-navbar-padding: 2.5rem;
 
 $navbar-link-color-hover: lightpink;
+
+$mobile-navbar-background-color: #333;
+
+//=====================================================
+// FORMS
+//=====================================================
+
+$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+
+//======================================================
+// Buttons
+//======================================================
+
+$button-background-color: $color-primary;
+$button-background-hover: darken($button-background-color, 10%);
+$button-color: #ffffff;
+$button-font-weight: 600;
+$button-font-family: "Roboto", "Arial", sans-serif;
+$button-font-size: 1.5rem;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: $button-background-color;
+$button-border-radius: $border-radius;
+$button-text-transform: none;
+
+// Accent buttons
+$accent-button-background-color: $color-secondary;
+$accent-button-color: #ffffff;
+$accent-button-color-hover: lighten($accent-button-background-color, 10%);
+
+// Muted Buttons
+$muted-border: 1px solid $accent-color;
+$muted-border-hover: 1px solid darken($accent-color, 30%);
+$muted-background: transparent;
+$muted-background-hover: transparent;
+$muted-color: darken($accent-color, 50%);
+$muted-color-hover: darken($accent-color, 50%);
+
+// Round Buttons
+$round-buttons: 40px;
